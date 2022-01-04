@@ -21,3 +21,6 @@ OpenTelemetry+Jaeger的分布式链路追踪演示Demo
 | spring-boot | 2.6.2 | JDK 1.8+ |
 | nginx | 1.16.1 |  |
 
+<a name="igqfL"></a>
+#### 资料引用
+[https://github.com/open-telemetry/opentelemetry-java-instrumentation](https://github.com/open-telemetry/opentelemetry-java-instrumentation)<br />[https://www.jaegertracing.io/docs/1.29/getting-started/](https://www.jaegertracing.io/docs/1.29/getting-started/)<br />[https://opentelemetry.io/docs/](https://opentelemetry.io/docs/)
