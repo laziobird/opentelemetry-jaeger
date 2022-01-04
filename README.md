@@ -1,2 +1,2 @@
-# jaeger-opentelemetry-demo
-基于Jaeger+opentelemetry的链路追踪demo,完整了解可观测体系下Traces原理
+# opentelemetry-jaeger
+基于OpenTelemetry+Jaeger的分布式链路追踪demo,完整了解可观测体系下Traces原理
