@@ -1,0 +1,44 @@
+version: '3.3'
+networks:
+  jaeger:
+
+services:
+
+    nginx:
+       container_name: nginx
+       image: nginx:1.16.1
+       restart: always
+       ##ports:
+       ##   - 80:80
+       volumes:
+         - ./nginx.conf:/etc/nginx/nginx.conf
+       network_mode: host
+
+    app:
+        build: ./
+        container_name: observble-demo
+        ##ports:
+        ##    - 8080:8080
+        environment:
+            # 外网ip，用于访问jaeger UI
+            - EXTRA_HOST=localhost
+            ##- JAVA_OPTS=-javaagent:opentelemetry-javaagent.jar -Dotel.resource.attributes=service.name=trace-demo -Dotel.traces.exporter=jaeger -Dotel.metrics.exporter=none
+        depends_on:
+            - jaeger
+        network_mode: host
+
+    jaeger:
+        image: jaegertracing/all-in-one:1.29
+        ##ports:
+        ##    - 5775:5775/udp
+        ##    - 6831:6831/udp
+        ##    - 6832:6832/udp
+        ##    - 5778:5778
+        ##    - 16686:16686
+        ##    - 14250:14250
+        ##    - 14268:14268
+        ##    - 14269:14269
+        ##    - 9411:9411
+        ##networks:
+        ##    - jaeger
+        network_mode: host
