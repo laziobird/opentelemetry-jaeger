@@ -23,6 +23,7 @@ OpenTelemetry+Jaeger的分布式链路追踪演示Demo
 | opentelemetry-sdk | 1.9.1 | ​<br /> |
 | opentelemetry-exporter-jaeger | 1.9.1 |  |
 | opentelemetry-semconv | 1.9.0-alpha | 目前只有alpha版本 |
+| jaegertracing | all-in-one:1.29 | docker镜像 |
 | spring-boot | 2.6.2 | JDK 1.8+ |
 | nginx | 1.16.1 |  |
 
