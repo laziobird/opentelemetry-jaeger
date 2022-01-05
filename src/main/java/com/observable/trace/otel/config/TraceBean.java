@@ -23,7 +23,7 @@ import io.opentelemetry.semconv.resource.attributes.ResourceAttributes;
 /**
  * 
  * @Title: TraceBean.java
- * @Description: TODO
+ * @Description: https://opentelemetry.io/docs/instrumentation/java/manual_instrumentation/
  * @author tim.jiang
  * @date 2021年12月31日
  */
@@ -35,6 +35,7 @@ public class TraceBean {
     @Bean
     @ConditionalOnBean(TraceConfig.class)
     public OpenTelemetry openTelemetry() {
+    	// Use Jaeger Exporter
         SpanProcessor spanProcessor = getJaegerGrpcSpanProcessor();
         Resource serviceNameResource = Resource.create(Attributes.of(ResourceAttributes.SERVICE_NAME, "otelService"));
 
