@@ -12,6 +12,9 @@ OpenTelemetry+Jaeger的分布式链路追踪演示Demo
 <a name="CpQ6j"></a>
 ### Architecture 
 ![image.png](https://cdn.nlark.com/yuque/0/2022/png/25529450/1641275525932-5bfffe21-d563-4576-a570-775a0883ad27.png#clientId=u2d91e3eb-f650-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=411&id=u431635f7&margin=%5Bobject%20Object%5D&name=image.png&originHeight=546&originWidth=960&originalType=binary&ratio=1&rotation=0&showTitle=false&size=259252&status=done&style=none&taskId=ud0e6f27d-1853-4f67-ba14-bcc120aff61&title=&width=723)
+<a name="cqdhz"></a>
+#### 效果图
+ ![image.png](https://cdn.nlark.com/yuque/0/2022/png/25529450/1641358483862-14721bd3-3bdb-4a6d-b320-e8eb09970a90.png#clientId=u58d1f88b-2c01-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=310&id=ucb9dec40&margin=%5Bobject%20Object%5D&name=image.png&originHeight=609&originWidth=1439&originalType=binary&ratio=1&rotation=0&showTitle=false&size=356007&status=done&style=none&taskId=uf76b343d-c5d3-4a5f-bb95-3abc4cab5a3&title=&width=732)
 <a name="hQyuS"></a>
 #### 框架列表
 | **Library/Framework** | **Versions** | **备注** |
