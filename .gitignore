@@ -28,7 +28,7 @@ hs_err_pid*
 
 # Java
 .project
-.classpat
+.classpath
 
 # IDE
 .settings
