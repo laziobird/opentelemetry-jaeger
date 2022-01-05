@@ -26,3 +26,9 @@ hs_err_pid*
 # Mac
 .DS_Store
 
+# Java
+.project
+.classpat
+
+# IDE
+.settings
