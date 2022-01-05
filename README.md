@@ -34,9 +34,9 @@ OpenTelemetry+Jaeger的分布式链路追踪演示Demo
 Docker 环境，三个服务部署在一台服务器上，网络Host模式
 ```shell
 ## down
-docker-compose -f /opt/jaeger_demo/otel/docker-compose.yml  down
+docker-compose -f /path/docker-compose.yml  down
 ## start
-docker-compose -f /usr/local/mall/otel/docker-compose.yml  up -d
+docker-compose -f /path/docker-compose.yml  up -d
 ```
 <a name="Je6W1"></a>
 #### Mac
