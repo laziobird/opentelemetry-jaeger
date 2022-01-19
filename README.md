@@ -41,6 +41,17 @@ docker-compose -f /path/docker-compose.yml  up -d
 ```
 <a name="Je6W1"></a>
 #### Mac
+Mac 用Docker Host 模式很坑，建议网络 bridge模式
+```yaml
+networks:
+  jaeger:
+  
+services: 
+    jaeger:
+        image: jaegertracing/all-in-one:1.29
+        networks:
+            - jaeger
+```
 ​<br />
 <a name="T6DHp"></a>
 ### Documentation 
