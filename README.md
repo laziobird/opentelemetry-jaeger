@@ -30,7 +30,8 @@ OpenTelemetry+Jaeger的分布式链路追踪演示案例
 ## Compiling project
 <a name="KDdV7"></a>
 ### Linux 
-Docker 环境，三个服务部署在一台服务器上，网络Host模式
+  - 下载最新opentelemetry-javaagent.jar [官方](https://github.com/open-telemetry/opentelemetry-java-instrumentation/tags) , 在Dockerfile同目录下命名为opentelemetry-javaagent.jar，具体看Dockerfile配置
+  - Docker 环境，三个服务部署在一台服务器上，网络Host模式
 ```shell
 ## down
 docker-compose -f /path/docker-compose.yml  down
@@ -53,3 +54,5 @@ services:
 <a name="T6DHp"></a>
 ## Documentation 
 [https://github.com/open-telemetry/opentelemetry-java-instrumentation](https://github.com/open-telemetry/opentelemetry-java-instrumentation)<br />[https://www.jaegertracing.io/docs/1.29/getting-started/](https://www.jaegertracing.io/docs/1.29/getting-started/)<br />[https://opentelemetry.io/docs/](https://opentelemetry.io/docs/)
+## 联系
+如果有什么疑问和建议，欢迎提交issues，我会第一时间回复
