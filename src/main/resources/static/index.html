@@ -13,20 +13,25 @@
     }
 </script>
 <body >
-    <p style="font-size:30px">可观测Trace Demo New </p>
-	<HR style="FILTER:progid:DXImageTransform.Microsoft.Shadow(color:#987cb9,direction:145,strength:15)" color=#987cb9 SIZE=3> 
-	<br/>  
+  <p style="font-size:30px">可观测Trace Demo New </p>
+	<HR style="FILTER:progid:DXImageTransform.Microsoft.Shadow(color:#987cb9,direction:145,strength:15)" color=#987cb9 SIZE=3>
+	<br/>
     打一个Tag，Key是username : <input type="text" placeholder="请输入Tag值" name="tag" id="tag" value="" maxlength="18" size="20" style="height:30px;" /><br />
     <p><a href="javascript:getResource()" >发起一个付账单请求,生成一个trace</a> </p>
 	<br/>
-	<HR style="FILTER:progid:DXImageTransform.Microsoft.Shadow(color:#987cb9,direction:145,strength:15)" color=#987cb9 SIZE=3>    
-    <a href="/resource?tag=error">发起一个异常付账单请求,生成一个trace</a> <br /> 
+	<HR style="FILTER:progid:DXImageTransform.Microsoft.Shadow(color:#987cb9,direction:145,strength:15)" color=#987cb9 SIZE=3>
+    <a href="/resource?tag=error">发起一个异常付账单请求,生成一个trace</a> <br />
     <br/>
-    <HR style="FILTER:progid:DXImageTransform.Microsoft.Shadow(color:#987cb9,direction:145,strength:15)" color=#987cb9 SIZE=3> 
-    <p><a href="/createSpanAndLink">创建 Spans</a> </p>    
-    <HR style="FILTER:progid:DXImageTransform.Microsoft.Shadow(color:#987cb9,direction:145,strength:15)" color=#987cb9 SIZE=3> 
+    <HR style="FILTER:progid:DXImageTransform.Microsoft.Shadow(color:#987cb9,direction:145,strength:15)" color=#987cb9 SIZE=3>
+    <p><a href="/createSpanAndLink">创建 Spans</a> </p>
+    <HR style="FILTER:progid:DXImageTransform.Microsoft.Shadow(color:#987cb9,direction:145,strength:15)" color=#987cb9 SIZE=3>
     <p><a href="/event">创建带事件的 Spans</a> </p>
 
+    <HR style="FILTER:progid:DXImageTransform.Microsoft.Shadow(color:#987cb9,direction:145,strength:15)" color=#987cb9 SIZE=3>
+    <p style="font-size:30px">可观测Metric Demo New</p>
+    <p><a href="/jvm">Prometheus 采集JVM数据</a> </p>
+    <HR style="FILTER:progid:DXImageTransform.Microsoft.Shadow(color:#987cb9,direction:145,strength:15)" color=#987cb9 SIZE=3>
+    <p><a href="/prometheus">Prometheus 控制台</a> </p>
 
 </body>
 </html>
