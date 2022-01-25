@@ -2,7 +2,7 @@
 # opentelemetry-jaeger
 <a name="XGdFY"></a>
 ## Introduction
-OpenTelemetry+Jaeger的分布式链路追踪演示案例
+OpenTelemetry+Jaeger+Prometheus的分布式链路追踪演示案例
 
 - Load Balance ：Nginx
 - 前端：Java SpringBoot Web + OpenTelemetry +  Jaeger Trace Exporter  + Prometheus Metric Exporter
