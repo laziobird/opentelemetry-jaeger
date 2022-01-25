@@ -1,5 +1,5 @@
 <a name="wSh88"></a>
-# opentelemetry-jaeger
+# opentelemetry-jaeger-prometheus
 <a name="XGdFY"></a>
 ## Introduction
 OpenTelemetry+Jaeger+Prometheus的分布式链路追踪演示案例
