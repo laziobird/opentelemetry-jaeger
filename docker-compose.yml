@@ -42,3 +42,12 @@ services:
         ##networks:
         ##    - jaeger
         network_mode: host
+
+    prometheus:
+      container_name: prometheus
+      image: prom/prometheus:latest
+      volumes:
+        - ./prometheus.yaml:/etc/prometheus/prometheus.yml
+      network_mode: host
+      #ports:
+      #  - "9090:9090"
