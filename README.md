@@ -16,7 +16,7 @@ OpenTelemetry+Jaeger的分布式链路追踪演示案例
 ## Tracing 效果图
  ![image.png](./docs/trace.png#clientId=u58d1f88b-2c01-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=310&id=ucb9dec40&margin=%5Bobject%20Object%5D&name=image.png&originHeight=609&originWidth=1439&originalType=binary&ratio=1&rotation=0&showTitle=false&size=356007&status=done&style=none&taskId=uf76b343d-c5d3-4a5f-bb95-3abc4cab5a3&title=&width=732)
 ## Prometheus 采集Metric 
- ![image.png](./docs/prometheus.jpg)
+ ![prometheus.jpg](./assets/prometheus.jpg)
 ## 框架列表
 | **Library/Framework** | **Versions** | **备注** |
 | --- | --- | --- |
