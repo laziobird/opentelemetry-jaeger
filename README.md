@@ -8,7 +8,7 @@ OpenTelemetry+Jaeger+Prometheus的分布式链路追踪演示案例
 - 前端：Java SpringBoot Web + OpenTelemetry +  Jaeger Trace Exporter  + Prometheus Metric Exporter
 - 后端：Jaeger UI 、Prometheus UI
 
-深入了解可观测体系下Traces概念和运行原理<br />演示地址 [http://106.14.209.9/](http://106.14.209.9/)<br />
+深入了解可观测体系下Traces概念和运行原理<br />
   - ![Alt Text](./assets/introduce.gif)
 ## Architecture 
 ![image.png](./docs/arc.png#clientId=u2d91e3eb-f650-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=411&id=u431635f7&margin=%5Bobject%20Object%5D&name=image.png&originHeight=546&originWidth=960&originalType=binary&ratio=1&rotation=0&showTitle=false&size=259252&status=done&style=none&taskId=ud0e6f27d-1853-4f67-ba14-bcc120aff61&title=&width=723)
