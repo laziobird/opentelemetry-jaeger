@@ -4,9 +4,10 @@
 ## Introduction
 OpenTelemetry+Jaeger+Prometheus的分布式链路追踪演示案例
 
-- Load Balance ：Nginx
-- 前端：Java SpringBoot Web + OpenTelemetry +  Jaeger Trace Exporter  + Prometheus Metric Exporter
-- 后端：Jaeger UI 、Prometheus UI
+- Load Balance：Nginx
+- Java：SpringBoot 
+- Agent：OpenTelemetry +  Jaeger Trace Exporter  + Prometheus Metric Exporter
+- 可视化：Jaeger UI 、Prometheus UI
 
 深入了解可观测体系下Traces概念和运行原理<br />
   - ![Alt Text](./assets/introduce.gif)
