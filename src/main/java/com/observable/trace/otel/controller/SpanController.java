@@ -80,7 +80,7 @@ public class SpanController extends BaseController {
 	public String loadBalancer(String tag) {
 		logger.info("enter loadBalancer");
 		Span span = Span.current();
-		// Baggage: save a key
+		// Baggage 的用法: save a key
 		Baggage.current().toBuilder().put("baggage.key", "蒋志伟").build().makeCurrent();
 		// logback 里面绑定user-id日志中
 		String userId = "user-" + tag;
@@ -103,7 +103,8 @@ public class SpanController extends BaseController {
 	@GetMapping("/resource")
 	@ResponseBody
 	public String resource() {
-		String baggage = Baggage.current().getEntryValue("app.username");
+		// Baggage 的用法: get a key
+		String baggage = Baggage.current().getEntryValue("baggage.key");
 		Span spanCur = Span.current();
 		spanCur.setAttribute("app.username", "baggage_" + baggage);
 		logger.info("baggage---------------------->");
