@@ -2,8 +2,10 @@
 # opentelemetry-jaeger-prometheus
 <a name="XGdFY"></a>
 ## Introduction
+### 原理文档
+- [链路数据如何传播](./docs/链路数据如何传播%20.md)
+- [Opentelemetry自动构建Trace](./docs/自动构建.md)
 ### OpenTelemetry+Jaeger+Prometheus的分布式链路追踪演示案例
-
 - Load Balance：Nginx
 - Java：SpringBoot 
 - Agent：OpenTelemetry +  Jaeger Trace Exporter  + Prometheus Metric Exporter
@@ -11,9 +13,6 @@
 深入了解可观测体系下Traces概念和运行原理<br />
   - ![Alt Text](./assets/introduce.gif)
  
-### 原理文档
-- [链路数据如何传播](./docs/链路数据如何传播%20.md)
-- [Opentelemetry自动构建Trace](./docs/自动构建.md)
 ## Architecture 
 ![image.png](./docs/arc.png#clientId=u2d91e3eb-f650-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=411&id=u431635f7&margin=%5Bobject%20Object%5D&name=image.png&originHeight=546&originWidth=960&originalType=binary&ratio=1&rotation=0&showTitle=false&size=259252&status=done&style=none&taskId=ud0e6f27d-1853-4f67-ba14-bcc120aff61&title=&width=723)
 <a name="cqdhz"></a>
