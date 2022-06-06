@@ -5,10 +5,10 @@ VOLUME /tmp
 
 WORKDIR /data
 RUN mkdir logs
+## 通过maven打包，重命名otel.jar
 ADD otel.jar otel.jar
 ## opentelemetry-javaagent.jar 来自于官方https://github.com/open-telemetry/opentelemetry-java-instrumentation/tags，请自行下载，命名为opentelemetry-javaagent.jar即可
 ADD opentelemetry-javaagent.jar opentelemetry-javaagent.jar
-ADD otel.jar
 # 修改时区
 ENV TZ=Asia/Shanghai
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
