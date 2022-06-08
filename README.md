@@ -24,6 +24,7 @@
 | **Library/Framework** | **Versions** | **备注** |
 | --- | --- | --- |
 | opentelemetry-api | 1.9.1 | ​<br /> |
+| opentelemetry-java-instrumentation | 1.9.1 | Java探针 |
 | opentelemetry-sdk | 1.9.1 | ​<br /> |
 | opentelemetry-exporter-jaeger | 1.9.1 |  |
 | opentelemetry-semconv | 1.9.0-alpha | 目前只有alpha版本 |
