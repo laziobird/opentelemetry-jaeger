@@ -60,6 +60,21 @@ services:
         networks:
             - jaeger
 ```
+
+#非容器独立部署模式 
+## java 程序
+其中 opentelemetry-javaagent.jar 是探针 otel.jar 是我们编译 jar 包
+## java 程序
+```yaml
+java -javaagent:/path/opentelemetry-javaagent.jar  -Dotel.resource.attributes=service.name=trace-demo -Dotel.traces.exporter=jaeger  -jar target/otel.jar
+```
+## Docker单独启 Jaeger
+```yaml
+docker run -d --name jaeger   -p 5775:5775/udp   -p 6831:6831/udp  -p 6832:6832/udp  -p 5778:5778   -p 16686:16686   -p 14268:14268   -p 14250:14250   -p 9411:9411   jaegertracing/all-in-one:1.27
+```
+## Docker单独启 Prometheus
+
+
 <a name="T6DHp"></a>
 ## Documentation 
 [https://github.com/open-telemetry/opentelemetry-java-instrumentation](https://github.com/open-telemetry/opentelemetry-java-instrumentation)<br />[https://www.jaegertracing.io/docs/1.29/getting-started/](https://www.jaegertracing.io/docs/1.29/getting-started/)<br />[https://opentelemetry.io/docs/](https://opentelemetry.io/docs/)
